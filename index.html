@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        Student Enrollment Form
+
+
+    </div>
+    <di class="main-container">
+
+        <div class="form1">
+            <form class="form2" onsubmit="validate(); return false">
+                <p>Name*</p>
+                <input type="text" name="name" id="name" class="a" required>
+                <p>Email*</p>
+                <input type="email" name="email" id="email" class="a" required>
+                <p>Website*</p>
+                <input type="text" name="website" id="website" class="a" required>
+                <p>Image Link*</p>
+                <input type="text" name="imagelink" id="image" class="a" required>
+                <p>Gender*</p>
+
+                <input type="radio" id="rd1" name="gender" value="male" required>Male: 
+                <input type="radio" id="rd2" name="gender" value="female" required>female:<br>
+                <p>Skills</p>
+                <input type="checkbox" id="java" name="java" class="checkbox" value="java">
+                <label for="java">java</label>
+                <input type="checkbox" id="html" name="html" class="checkbox" value="html">
+                <label for="html">html</label>
+                <input type="checkbox" id="css" name="css" class="checkbox" value="css">
+                <label for="css">css</label><br><br>
+                <input type="submit" name="button" style="background-color:#F6653C; color: white; font-weight: bold; font-size: 12px;" id="btn" class="bt" value="Enroll student">&nbsp;
+                <input type="reset" class="bt" style="font-size: 12px; font-weight: bold;  background-color: rgb(56, 180, 56);" value="Reset">
+
+            </form>
+        </div>
+        <hr>
+        <div class="enrolled">
+            <h1>Enrolled students</h1>
+            <table id="show">
+                <th id="first">
+                    Description
+                </th>
+                <th id="sec">
+                    Image
+                </th>
+
+            </table>
+        </div>
+        </div>
+
+</body>
+
+</html>
